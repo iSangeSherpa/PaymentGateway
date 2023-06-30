@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.7.1)
+  - Khalti (1.0.17)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Khalti
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Khalti
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  Khalti: 77f3170ebed03ce6e6af65230997a0a0516c0796
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: 819f5d7cc793b1a496e0d405616871cde61bd7f6
+
+COCOAPODS: 1.12.1

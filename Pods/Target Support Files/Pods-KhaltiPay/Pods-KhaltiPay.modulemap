@@ -1,0 +1,6 @@
+framework module Pods_KhaltiPay {
+  umbrella header "Pods-KhaltiPay-umbrella.h"
+
+  export *
+  module * { export * }
+}

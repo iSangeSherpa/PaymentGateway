@@ -11,17 +11,19 @@
 		502148542A4E9AD4006F804D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502148532A4E9AD4006F804D /* SceneDelegate.swift */; };
 		502148562A4E9AD4006F804D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502148552A4E9AD4006F804D /* ViewController.swift */; };
 		5021485B2A4E9AD5006F804D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5021485A2A4E9AD5006F804D /* Assets.xcassets */; };
-		5021485E2A4E9AD5006F804D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5021485C2A4E9AD5006F804D /* LaunchScreen.storyboard */; };
+		BC0741E4473C6ED976E49F65 /* Pods_KhaltiPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D237D3A3DF713F273A4F935A /* Pods_KhaltiPay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		416E7BBD26792D1F1B4FD66F /* Pods-KhaltiPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhaltiPay.release.xcconfig"; path = "Target Support Files/Pods-KhaltiPay/Pods-KhaltiPay.release.xcconfig"; sourceTree = "<group>"; };
 		5021484E2A4E9AD4006F804D /* KhaltiPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KhaltiPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		502148512A4E9AD4006F804D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		502148532A4E9AD4006F804D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		502148552A4E9AD4006F804D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5021485A2A4E9AD5006F804D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5021485D2A4E9AD5006F804D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5021485F2A4E9AD5006F804D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6614A3C462DCA6D921747E7B /* Pods-KhaltiPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhaltiPay.debug.xcconfig"; path = "Target Support Files/Pods-KhaltiPay/Pods-KhaltiPay.debug.xcconfig"; sourceTree = "<group>"; };
+		D237D3A3DF713F273A4F935A /* Pods_KhaltiPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KhaltiPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +31,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0741E4473C6ED976E49F65 /* Pods_KhaltiPay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06238E4C9E0920539625AD59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6614A3C462DCA6D921747E7B /* Pods-KhaltiPay.debug.xcconfig */,
+				416E7BBD26792D1F1B4FD66F /* Pods-KhaltiPay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		502148452A4E9AD4006F804D = {
 			isa = PBXGroup;
 			children = (
 				502148502A4E9AD4006F804D /* KhaltiPay */,
 				5021484F2A4E9AD4006F804D /* Products */,
+				06238E4C9E0920539625AD59 /* Pods */,
+				858FD154FF12026F774F9D1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +72,17 @@
 				502148532A4E9AD4006F804D /* SceneDelegate.swift */,
 				502148552A4E9AD4006F804D /* ViewController.swift */,
 				5021485A2A4E9AD5006F804D /* Assets.xcassets */,
-				5021485C2A4E9AD5006F804D /* LaunchScreen.storyboard */,
 				5021485F2A4E9AD5006F804D /* Info.plist */,
 			);
 			path = KhaltiPay;
+			sourceTree = "<group>";
+		};
+		858FD154FF12026F774F9D1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D237D3A3DF713F273A4F935A /* Pods_KhaltiPay.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 502148622A4E9AD5006F804D /* Build configuration list for PBXNativeTarget "KhaltiPay" */;
 			buildPhases = (
+				E56B741AFB43719C1E9F0338 /* [CP] Check Pods Manifest.lock */,
 				5021484A2A4E9AD4006F804D /* Sources */,
 				5021484B2A4E9AD4006F804D /* Frameworks */,
 				5021484C2A4E9AD4006F804D /* Resources */,
+				6336F74E5374915A3E48FD65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,12 +145,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5021485E2A4E9AD5006F804D /* LaunchScreen.storyboard in Resources */,
 				5021485B2A4E9AD5006F804D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6336F74E5374915A3E48FD65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KhaltiPay/Pods-KhaltiPay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KhaltiPay/Pods-KhaltiPay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KhaltiPay/Pods-KhaltiPay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E56B741AFB43719C1E9F0338 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KhaltiPay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5021484A2A4E9AD4006F804D /* Sources */ = {
@@ -141,17 +205,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		5021485C2A4E9AD5006F804D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5021485D2A4E9AD5006F804D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		502148602A4E9AD5006F804D /* Debug */ = {
@@ -270,6 +323,7 @@
 		};
 		502148632A4E9AD5006F804D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6614A3C462DCA6D921747E7B /* Pods-KhaltiPay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +351,7 @@
 		};
 		502148642A4E9AD5006F804D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 416E7BBD26792D1F1B4FD66F /* Pods-KhaltiPay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

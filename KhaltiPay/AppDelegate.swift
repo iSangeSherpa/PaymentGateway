@@ -6,14 +6,20 @@
 //
 
 import UIKit
+import Khalti
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    let khaltiUrlScheme = "KhaltiPayScheme"
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        Khalti.shared.action(with: url)
+        return Khalti.shared.defaultAction()
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        Khalti.shared.appUrlScheme = khaltiUrlScheme
         return true
     }
 
@@ -31,6 +37,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
 }
 
+extension AppDelegate: KhaltiPayDelegate {
+    
+    func onCheckOutSuccess(data: Dictionary<String, Any>) {
+        print(data)
+    }
+    
+    func onCheckOutError(action: String, message: String, data: Dictionary<String, Any>?) {
+        print(message)
+    }
+    
+}
